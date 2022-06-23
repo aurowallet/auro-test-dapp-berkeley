@@ -42,11 +42,11 @@ module.exports = {
         // publicPath: DIST,
     },
     devServer: {
-        port: 9011,
+        port: 9012,
         static: DIST,
         headers:{
           'Cross-Origin-Opener-Policy': 'same-origin',
           'Cross-Origin-Embedder-Policy': 'require-corp'
-        }
+        },
     }
 };

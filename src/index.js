@@ -125,7 +125,7 @@ const initializeMina = async () => {
   const signPartyMemo = document.getElementById('signPartyMemo')
 
   signPartyButton.onclick = async () => {
-
+    // there need start in your local host .
     let url = gqlContent.value
     if (!url) {
       console.log("need Set useful gql-url")
