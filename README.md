@@ -16,6 +16,7 @@ this can test DApp features except `sendTransaction` .
 ## How to run Local Serve
 
 ```sh
+npm install
 npm run dev
 ```
 then you can open `http://localhost:9012/` to test these feature
