@@ -10,9 +10,9 @@ auro-test-dapp-berkeley-qa provide mina berkeley-qa DApp feature. that contains:
 - verifyMessage
 
 production website deployed in https://aurowallet.github.io/auro-test-dapp-berkeley-qa/
-this can test DApp features except `sendTransaction` .
+this can test DApp features except `mina party` .
 
-`sendTransaction`  need start local feature. 
+`mina party`  need start local feature. 
 ## How to run Local Serve
 
 ```sh
