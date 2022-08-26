@@ -8,7 +8,8 @@ export async function getZkbody(url) {
   await isReady;
   toc()
   setGraphqlEndpoint(url)
-  const zkappAddress = PublicKey.fromBase58("B62qrPXPDBFu3bMjooHW9JAKvmxciwBc4krQ8MRWAnnKvoHoyhTC7R5")
+  const zkappAddress = PublicKey.fromBase58('B62qmtRNEUtTHH8grsaZM51uE2WF1bQTCTmZzuAc3xv19vHrRd9j2kK')
+  // ("B62qrPXPDBFu3bMjooHW9JAKvmxciwBc4krQ8MRWAnnKvoHoyhTC7R5")
   tic('fetch account')
   await fetchAccount(zkappAddress)
   toc()
