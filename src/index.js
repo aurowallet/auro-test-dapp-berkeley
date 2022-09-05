@@ -120,6 +120,7 @@ const initializeMina = async () => {
   const buildTip = document.getElementById('buildTip')
 
   const gqlContent = document.getElementById('gqlContent')
+  const zkAppAddress = document.getElementById('zkAppAddress')
 
   const signPartyFee = document.getElementById('signPartyFee')
   const signPartyMemo = document.getElementById('signPartyMemo')
@@ -133,7 +134,8 @@ const initializeMina = async () => {
     }
     buildTip.hidden = false
 
-    let zkBody = await getZkbody(url)
+    let zkAddress = zkAppAddress.value?.trim()
+    let zkBody = await getZkbody(url,zkAddress)
     buildTip.hidden = true
 
     let partyResult = await window.mina.sendTransaction({
