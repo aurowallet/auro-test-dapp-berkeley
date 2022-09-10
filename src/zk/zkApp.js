@@ -24,7 +24,8 @@ export async function getZkbody(url,zkAppAddress) {
   });
   toc()
   tic('contract update json')
-  let partiesJsonUpdate = (await transaction.prove()).toJSON();
+  await transaction.prove().catch(err=>err)
+  let partiesJsonUpdate = transaction.toJSON();
   toc()
   return partiesJsonUpdate
 } catch (error) {
