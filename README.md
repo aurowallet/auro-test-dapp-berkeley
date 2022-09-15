@@ -13,7 +13,7 @@ Production website deployed in https://aurowallet.github.io/auro-test-dapp-berke
 this can test DApp features except `mina party` .
 
 `mina party`  need start local feature. 
-## How to run Local Serve
+## How to run Local Server
 
 ```sh
 npm install
