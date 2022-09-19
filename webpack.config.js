@@ -18,7 +18,7 @@ module.exports = {
     entry: './src/index.js',
     plugins: [
         new webpack.ProvidePlugin({
-            process: 'process/browser',
+            // process: 'process/browser',
             Buffer: ['buffer', 'Buffer'],
         }),
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
