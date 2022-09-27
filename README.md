@@ -12,7 +12,6 @@ auro-test-dapp-berkeley-qa provide mina berkeley-qa DApp feature. that contains:
 Production website deployed in https://aurowallet.github.io/auro-test-dapp-berkeley-qa/
 this can test DApp features except `mina party` .
 
-`mina party`  need start local feature. 
 ## How to run Local Server
 
 ```sh
