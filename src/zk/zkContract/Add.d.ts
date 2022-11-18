@@ -1,4 +1,4 @@
-import { Field, SmartContract, State, DeployArgs } from 'snarkyjs';
+import { Field, SmartContract, State, DeployArgs, PrivateKey } from 'snarkyjs';
 /**
  * Basic Example
  * See https://docs.minaprotocol.com/zkapps for more info.
@@ -11,6 +11,6 @@ import { Field, SmartContract, State, DeployArgs } from 'snarkyjs';
 export declare class Add extends SmartContract {
     num: State<Field>;
     deploy(args: DeployArgs): void;
-    init(): void;
+    init(zkappKey: PrivateKey): void;
     update(): void;
 }

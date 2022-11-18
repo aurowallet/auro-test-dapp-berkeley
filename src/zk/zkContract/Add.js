@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Field, SmartContract, state, State, method, Permissions, } from 'snarkyjs';
+import { Field, SmartContract, state, State, method, Permissions, PrivateKey, } from 'snarkyjs';
 /**
  * Basic Example
  * See https://docs.minaprotocol.com/zkapps for more info.
@@ -28,14 +28,14 @@ export class Add extends SmartContract {
             ...Permissions.default(),
             editState: Permissions.proofOrSignature(),
         });
-        // this.init();
     }
-    init() {
+    init(zkappKey) {
+        super.init(zkappKey);
         this.num.set(Field(1));
     }
     update() {
         const currentState = this.num.get();
-        this.num.assertEquals(currentState); 
+        this.num.assertEquals(currentState); // precondition that links this.num.get() to the actual on-chain state
         const newState = currentState.add(2);
         newState.assertEquals(currentState.add(2));
         this.num.set(newState);
@@ -48,7 +48,7 @@ __decorate([
 __decorate([
     method,
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [PrivateKey]),
     __metadata("design:returntype", void 0)
 ], Add.prototype, "init", null);
 __decorate([
