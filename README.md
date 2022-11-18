@@ -1,6 +1,6 @@
-# auro-test-dapp-berkeley-qa
+# auro-test-dapp-berkeley
 ## Introduction
-auro-test-dapp-berkeley-qa provide mina berkeley-qa DApp feature. that contains:
+auro-test-dapp-berkeley provide mina berkeley DApp feature. that contains:
 
 - requestAccounts
 - sendLegacyPayment
@@ -9,7 +9,7 @@ auro-test-dapp-berkeley-qa provide mina berkeley-qa DApp feature. that contains:
 - signMessage
 - verifyMessage
 
-Production website deployed in https://aurowallet.github.io/auro-test-dapp-berkeley-qa/
+Production website deployed in https://aurowallet.github.io/auro-test-dapp-berkeley/
 this can test DApp features except `mina party` .
 
 ## How to run Local Server
