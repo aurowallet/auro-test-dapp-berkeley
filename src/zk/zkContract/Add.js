@@ -32,6 +32,7 @@ export class Add extends SmartContract {
     init(zkappKey) {
         super.init(zkappKey);
         this.num.set(Field(1));
+        this.requireSignature();
     }
     update() {
         const currentState = this.num.get();
@@ -39,6 +40,7 @@ export class Add extends SmartContract {
         const newState = currentState.add(2);
         newState.assertEquals(currentState.add(2));
         this.num.set(newState);
+        this.requireSignature();
     }
 }
 __decorate([
