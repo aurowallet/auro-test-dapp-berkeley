@@ -27,7 +27,7 @@
   "license": "MIT",
   "homepage": "./",
   "dependencies": {
-    "@aurowallet/mina-provider": "0.1.5",
+    "@aurowallet/mina-provider": "0.1.6",
     "snarkyjs":"0.9.2"
   },
   "devDependencies": {
