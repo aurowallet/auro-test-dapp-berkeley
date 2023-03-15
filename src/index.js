@@ -132,10 +132,10 @@ const initializeMina = async () => {
       console.log("need Set useful gql-url")
       return
     }
-    buildTip.hidden = false
+    buildTip.hidden = false 
 
     let zkAddress = zkAppAddress.value?.trim()
-    let zkBody = await getZkbody(url,zkAddress)
+    let zkBody = await getZkbody(url,zkAddress) 
     buildTip.hidden = true
 
     let partyResult = await window.mina.sendTransaction({
