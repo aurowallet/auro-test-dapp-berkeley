@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
   if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Field, SmartContract, state, State, method, Permissions } from 'snarkyjs';
+import { Field, SmartContract, state, State, method } from 'snarkyjs';
 /**
 * Basic Example
 * See https://docs.minaprotocol.com/zkapps for more info.
@@ -24,10 +24,6 @@ export class Add extends SmartContract {
   }
   init() {
       super.init();
-      this.account.permissions.set({
-          ...Permissions.default(),
-          send: Permissions.signature(),
-      });
       this.num.set(Field(1));
   }
   update() {

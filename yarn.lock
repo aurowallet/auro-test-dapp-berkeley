@@ -3162,10 +3162,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-snarkyjs@0.9.2:
-  version "0.9.2"
-  resolved "https://registry.npmmirror.com/snarkyjs/-/snarkyjs-0.9.2.tgz#6740ad466212d62d8cde3f59acb609b1f8da7f19"
-  integrity sha512-exqHTSQMSlvdrTQ9lnqOtgOO93W2GVyTQnyWfz4qplQhhVhQGZaJrDVPbaygEdYB9cy1+2QESA9pCp1UGBuTRg==
+snarkyjs@0.9.6:
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/snarkyjs/-/snarkyjs-0.9.6.tgz#53fecc556c92e1c21404cd154986c7c52d48da48"
+  integrity sha512-/G3LyGyVuMBYPnNv7l9x/bsDjBUwj6cl2W484bxgwXL9iMwPi38dmm0+EzQij6pYaD0cFMcHWNrmxaxwyhxFbg==
   dependencies:
     blakejs "1.2.1"
     detect-gpu "^5.0.5"
