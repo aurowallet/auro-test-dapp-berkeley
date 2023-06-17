@@ -187,26 +187,11 @@ const initializeMina = async () => {
    */
   signVerifyButton.onclick = async () => {
     let from = account && account.length > 0 ? account[0] : ""
-
-    let verifyContentStr = verifySignatureContent.value
-    let signature 
-    try {
-      signature = JSON.parse(verifyContentStr)
-    } catch (error) {
-    }
-    if(!signature){
-      console.log('please input value json')
-      return 
-    }
-
     let verifyMessageBody = {
       publicKey: from,
-      signature: {
-        field: signature?.field,
-        scalar: signature?.scalar
-      },
-      payload: verifyMessageContent.value
-    }
+      signature: verifySignatureContent.value,
+      data: verifyMessageContent.value
+    } 
     let messageVerifyResult = await window.mina.verifyMessage(verifyMessageBody).catch(err => err)
     verifyResult.innerHTML = messageVerifyResult.error?.message||messageVerifyResult
   }
